@@ -1,17 +1,22 @@
 .App {
     font-family: sans-serif;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
     text-align: center;
   }
   
-  .hero {
+ .hero {
     background: rgb(51, 132, 246);
     padding: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+     min-height: 500px;
+     display: flex;
+     flex-direction: column;
+      justify-content: center;
   }
   
   .stopwatch button {
-    padding: 10px 20px;
+    padding: 10px 40px;
     margin-top: 10px;
     cursor: pointer;
     border-radius: 32px;
@@ -27,6 +32,7 @@
     padding: 30px;
     background: #fff;
     margin-top: 40px;
+    color: black;
   }
   
   .cards-container {
@@ -43,5 +49,42 @@
     width: 250px;
     height: 150px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  @media(max-width:480px){
+    .card {
+        border: 1px solid #ddd;
+        border-radius: 16px 16px 0 0;
+        padding: 20px;
+        
+        height: 120px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .cards-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .about {
+        padding: 20px;
+        background: #fff;
+        margin-top: 40px;
+      }
+      .hero {
+        background: rgb(51, 132, 246);
+        padding: 20px;
+        margin-bottom: 20px;
+         min-height: 500px;
+         display: flex;
+         flex-direction: column;
+          justify-content: center;
+      }
+      .hero h1{
+        font-size: 28px;
+      }
+      .about h2{
+        font-size: 20px;
+      }
   }
   
